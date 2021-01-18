@@ -1,0 +1,82 @@
+{
+  "__version__": "1.0.3",
+  "modules": {
+    "cache": {
+      "Audio": {
+        "value": true
+      },
+      "Core": {
+        "value": true
+      },
+      "DragonBones": {
+        "value": false
+      },
+      "Graphcis API": {
+        "value": true
+      },
+      "Intersection 2D": {
+        "value": true
+      },
+      "Particle 2D": {
+        "value": true
+      },
+      "Particle System": {
+        "value": true
+      },
+      "Physics": {
+        "option": 0,
+        "value": false
+      },
+      "Physics 2D": {
+        "option": 0,
+        "value": false
+      },
+      "Spine": {
+        "value": true
+      },
+      "Terrain": {
+        "value": true
+      },
+      "TiledMap": {
+        "value": false
+      },
+      "Tween": {
+        "value": true
+      },
+      "UI": {
+        "value": true
+      },
+      "VideoPlayer": {
+        "value": true
+      },
+      "WebGL 1.0": {
+        "value": true
+      },
+      "WebGL 2.0": {
+        "value": true
+      },
+      "WebView": {
+        "value": true
+      }
+    },
+    "includeModules": [
+      "base",
+      "gfx-webgl",
+      "gfx-webgl2",
+      "ui",
+      "particle",
+      "intersection-2d",
+      "particle-2d",
+      "audio",
+      "video",
+      "webview",
+      "tween",
+      "terrain",
+      "spine"
+    ],
+    "noDeprecatedFeatures": {
+      "value": false,
+      "version": ""
+    }
+  }
+}

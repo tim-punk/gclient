@@ -1,0 +1,124 @@
+{
+  "ver": "2.0.2",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "e795d27a-0d3d-4cdf-b684-c019a9318ac8",
+  "files": [],
+  "subMetas": {
+    "bd121": {
+      "importer": "gltf-mesh",
+      "uuid": "e795d27a-0d3d-4cdf-b684-c019a9318ac8@bd121",
+      "displayName": "",
+      "id": "bd121",
+      "name": "weapon1320_1_1.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "fd73d": {
+      "importer": "gltf-embeded-image",
+      "uuid": "e795d27a-0d3d-4cdf-b684-c019a9318ac8@fd73d",
+      "displayName": "",
+      "id": "fd73d",
+      "name": "DiffuseColor_Texture.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".png",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4f17a": {
+      "importer": "texture",
+      "uuid": "e795d27a-0d3d-4cdf-b684-c019a9318ac8@4f17a",
+      "displayName": "",
+      "id": "4f17a",
+      "name": "DiffuseColor_Texture.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 1,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/resources/fbx/weapon/weapon1320_1.png"
+      },
+      "ver": "1.0.20",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d8329": {
+      "importer": "gltf-material",
+      "uuid": "e795d27a-0d3d-4cdf-b684-c019a9318ac8@d8329",
+      "displayName": "",
+      "id": "d8329",
+      "name": "weapon1320_1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ecd0d": {
+      "importer": "gltf-scene",
+      "uuid": "e795d27a-0d3d-4cdf-b684-c019a9318ac8@ecd0d",
+      "displayName": "",
+      "id": "ecd0d",
+      "name": "weapon1320_1.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.11",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "DiffuseColor_Texture",
+        "remap": "db://assets/resources/fbx/weapon/weapon1320_1.png",
+        "uri": "e795d27a-0d3d-4cdf-b684-c019a9318ac8@fd73d"
+      }
+    ],
+    "legacyFbxImporter": true,
+    "redirect": "e795d27a-0d3d-4cdf-b684-c019a9318ac8@ecd0d",
+    "assetFinder": {
+      "meshes": [
+        "e795d27a-0d3d-4cdf-b684-c019a9318ac8@bd121"
+      ],
+      "skeletons": [],
+      "textures": [
+        "e795d27a-0d3d-4cdf-b684-c019a9318ac8@4f17a"
+      ],
+      "materials": [
+        "e795d27a-0d3d-4cdf-b684-c019a9318ac8@d8329"
+      ],
+      "scenes": [
+        "e795d27a-0d3d-4cdf-b684-c019a9318ac8@ecd0d"
+      ]
+    }
+  }
+}
