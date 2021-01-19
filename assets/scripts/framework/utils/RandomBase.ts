@@ -9,8 +9,8 @@ export default class RandomBase {
     private mw: number = 123456789;
     private mz: number = 987654321;
     private mask: number = 0xffffffff;
-    private ranArr: number[] = null;
-    private seed: number = null;
+    private ranArr: number[] = [];
+    private seed: number = 0;
     constructor(seed: number) {
         this.setRandomSeed(seed);
     }
@@ -21,11 +21,8 @@ export default class RandomBase {
     }
     // 获取下一个随机数
     public getNext() {
-// tslint:disable-next-line: no-bitwise
         this.mz = (36969 * (this.mz & 65535) * this.seed + (this.mz >> 16)) & this.mask;
-// tslint:disable-next-line: no-bitwise
         this.mw = (18000 * (this.mw & 65535) * this.seed + (this.mw >> 16)) & this.mask;
-// tslint:disable-next-line: no-bitwise
         let result = ((this.mz << 16) + this.mw) & this.mask;
         result /= 4294967296;
         result += 0.5;

@@ -1,13 +1,15 @@
-# 关于framework
+# 关于FrameworkInit.ts单例
 在引擎的基础上做的二次封装，旨在快速迭代的开发游戏。
-
-1.dd.d.ts  
-  通过生命dd全局变量去控制游戏内单例  
-2.audioManager  
+  
+1.AudioManager  
   负责音频处理  
-3.eventManager  
+2.EventManager  
   负责事件的分发  
-4.GameLog  
+3.LogManager  
   游戏日志输出  
-5.UIManager  
-  游戏ui管理  
+4.HttpManager  
+  游戏网络管理 
+5.UIManager
+  游戏ui管理
+6.Localization
+  多语言

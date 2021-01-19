@@ -1,22 +1,16 @@
+import { Singleton } from "../utils/Singleton";
+
 interface IEvent {
     eventType: string;
     thisObject: any;
     callback: (data: any) => void;
 }
-
-export default class EventManager {
-    public static getInstance(): EventManager {
-        if (EventManager.instance == null) {
-            EventManager.instance = new EventManager();
-        }
-        return EventManager.instance;
-    }
-    private static instance: EventManager = null;
-    private eventList: {[key: number]: IEvent[]} = null;
-
-    constructor() {
-        this.eventList = {};
-    }
+/**
+ * @author punk
+ * @description 事件单例
+ */
+export default class EventManager extends Singleton<EventManager>() {
+    private eventList: {[key: string]: IEvent[]} = {};
     /**
      * - 添加一个事件监听
      * @param eventType 事件类型
