@@ -2,9 +2,8 @@ import { EBuffType } from "./utils/UtilsEnum";
 
 /**
  * @class ConstValue
- * @author YeXiao
+ * @author punk
  * @description 常用的静态数据类型
- * @since 2019-3-12 17:15:30
  *
  */
 export default class ConstValue {

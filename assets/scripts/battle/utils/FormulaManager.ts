@@ -1,22 +1,14 @@
+import { Singleton } from "../../framework/utils/Singleton";
 import { IDamageInfo } from "../info/DamageInfo";
 import {SkillInfo} from "../info/SkillInfo";
 import ModelBase from "../model/ModelBase";
 
 /**
- * @class FormulaManager
- * @author YeXiao
+ * @author punk
  * @description 战斗公式单例
- * @since 2019-3-12 17:15:30
  *
  */
-export default class FormulaManager {
-    public static getInstance(): FormulaManager {
-        if ( FormulaManager.instance == null ) {
-            FormulaManager.instance = new FormulaManager();
-        }
-        return FormulaManager.instance;
-    }
-    private static instance: FormulaManager = null;
+export default class FormulaManager extends Singleton<FormulaManager>() {
     /**
      * 获取技能伤害值
      */

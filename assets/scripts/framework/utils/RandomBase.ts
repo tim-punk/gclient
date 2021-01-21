@@ -1,8 +1,6 @@
 /**
- * @class RandomBase
- * @author YeXiao
+ * @author punk
  * @description 随机数处理
- * @since 2019-3-12 17:15:30
  *
  */
 export default class RandomBase {

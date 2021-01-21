@@ -1,3 +1,4 @@
+import { Singleton } from "../../framework/utils/Singleton";
 import BattleCtrl from "../controller/BattleCtrl";
 import ModelBase from "../model/ModelBase";
 import { EBattleTrigger } from "./UtilsEnum";
@@ -9,15 +10,7 @@ import { EBattleTrigger } from "./UtilsEnum";
  * @since 2019-3-29 10:09:12
  *
  */
-export default class LogsManager {
-    public static getInstance(): LogsManager {
-        if ( LogsManager.instance == null ) {
-            LogsManager.instance = new LogsManager();
-            LogsManager.instance.logInfo = [];
-        }
-        return LogsManager.instance;
-    }
-    private static instance: LogsManager = null!;
+export default class LogsManager extends Singleton<LogsManager>() {
     private logInfo: any[] = null!;
     private battleCtrl: BattleCtrl = null!;
     public setBattleCtrl(battleCtrl: BattleCtrl) {
@@ -28,14 +21,12 @@ export default class LogsManager {
      */
     public clearAllLog() {
         this.logInfo = [];
-        this.battleCtrl = null;
     }
     /**
      * - 报错日志
      * @param log
      */
     public error(log: string) {
-// tslint:disable-next-line: no-console
         console.log("error:" + log);
     }
     /**
@@ -43,7 +34,6 @@ export default class LogsManager {
      * @param log
      */
     public echo(log: string) {
-// tslint:disable-next-line: no-console
         console.log("echo:" + log);
     }
     /**
@@ -52,14 +42,13 @@ export default class LogsManager {
      */
     public log(log: string) {
         let frame = 0;
-        if (this.battleCtrl && this.battleCtrl.GameCtrl) {
+        if (this.battleCtrl.GameCtrl) {
             frame = this.battleCtrl.GameCtrl.CurrentFrame;
         }
         if (!this.logInfo[frame]) {
             this.logInfo[frame] = [];
         }
         this.logInfo[frame].push(log);
-// tslint:disable-next-line: no-console
         console.log("frame:" + frame + " " + log);
     }
     public skilllog(trigger: EBattleTrigger, model: ModelBase) {
@@ -103,8 +92,7 @@ export default class LogsManager {
         for (let index = 0; index < report.length; index++) {
             const heroList:[] = report[index];
             let tmpStr = " camp:" + index + "{";
-            heroList.forEach(hero => {
-                // @ts-ignore
+            heroList.forEach((hero: any) => {
                 tmpStr = tmpStr + " [hid: " + hero.hid + " posIdx: " + hero.posIdx +" hp: " + hero.hp + "],";
             });
             this.log(tmpStr + "}");

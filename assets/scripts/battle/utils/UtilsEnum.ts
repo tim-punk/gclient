@@ -100,8 +100,8 @@ export enum EBuffType {
     crit,        // 暴击
     atkSpeed,    // 攻速
     block,       // 格挡
-    silent,                 // 沉默(无法放技能)
-    stun,                   // 击晕(无法攻击)
-    forzen,                 // 冰冻(无法攻击)
+    silent,      // 沉默(无法放技能)
+    stun,        // 击晕(无法攻击)
+    forzen,      // 冰冻(无法攻击)
     sign,        // 标记
 }

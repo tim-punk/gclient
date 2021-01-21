@@ -1,4 +1,3 @@
-import EventManager from "../../../framework/event/EventManager";
 import GameCtrl from "../controller/GameCtrl";
 import { BuffInfo } from "../info/BuffInfo";
 import {EHeroAttr, HeroInfo} from "../info/HeroInfo";
@@ -9,9 +8,8 @@ import SkillComponent from "./componenet/SkillComponent";
 
 /**
  * @class ModelBase
- * @author YeXiao
+ * @author punk
  * @description model基类,采用ces设计模式，buff、skill通过component形式组装
- * @since 2019-3-12 17:15:30
  *
  */
 export default class ModelBase {

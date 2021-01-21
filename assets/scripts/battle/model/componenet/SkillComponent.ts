@@ -5,10 +5,8 @@ import ModelBase from "../ModelBase";
 import BaseComponent from "./BaseComponent";
 
 /**
- * @class SkillComponent
- * @author YeXiao
+ * @author punk
  * @description 角色模型中的技能组件，负责对技能释放、组装
- * @since 2019-4-16 18:11:50
  *
  */
 export default class SkillComponent extends BaseComponent {
